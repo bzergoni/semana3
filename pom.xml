@@ -15,57 +15,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-core</artifactId>
-	    <version>5.0.7.RELEASE</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-beans</artifactId>
-	    <version>5.0.7.RELEASE</version>
-	</dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-context</artifactId>
-	    <version>5.0.7.RELEASE</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http -->
-	<dependency>
-	    <groupId>org.apache.cxf</groupId>
-	    <artifactId>cxf-rt-transports-http</artifactId>
-	    <version>3.2.4</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http-jetty -->
-	<dependency>
-	    <groupId>org.apache.cxf</groupId>
-	    <artifactId>cxf-rt-transports-http-jetty</artifactId>
-	    <version>3.2.4</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-	<dependency>
-	    <groupId>org.springframework</groupId>
-	    <artifactId>spring-web</artifactId>
-	    <version>5.0.7.RELEASE</version>
-	</dependency>
-	
-	<!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
-	<dependency>
-	    <groupId>javax.ws.rs</groupId>
-	    <artifactId>javax.ws.rs-api</artifactId>
-	    <version>2.0-m02</version>
-	</dependency>
-	
-	<!-- json dependency -->
-	<dependency>
-	    <groupId>org.codehaus.jackson</groupId>
-	    <artifactId>jackson-jaxrs</artifactId>
-	    <version>1.5.7</version>
-	</dependency>
 	
 	<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
 	<dependency>
@@ -73,8 +22,32 @@
 	    <artifactId>postgresql</artifactId>
 	    <version>9.1-901-1.jdbc4</version>
 	</dependency>
-
 	
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.1.0</version>
+	    <scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>5.0.0.RELEASE</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>5.0.0.RELEASE</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-web</artifactId>
+	    <version>5.0.0.RELEASE</version>
+	</dependency>
+		
   </dependencies>
   
   <build>

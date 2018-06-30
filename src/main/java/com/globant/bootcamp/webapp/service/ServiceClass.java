@@ -5,9 +5,35 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.springframework.stereotype.Component;
+
+import com.globant.bootcamp.webapp.domain.Person;
+
+import org.springframework.context.annotation.Scope;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+@Component
+@Scope("prototype")
 public class ServiceClass{
 	
 	public static void main(String[] args) {
+		
+		connectToDB();
+		
+		//ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		
+	    //Person p1 = (Person)context.getBean("person");
+	    
+	    //System.out.println(p1);
+    	
+    	//context.close();
+
+		
+	}
+	
+	public static void connectToDB(){
 		
 		ConnectionJDBC connection = new ConnectionJDBC();
 		Connection con = connection.getConnection();
@@ -34,4 +60,9 @@ public class ServiceClass{
 			e.printStackTrace();
 		}}
 	}
+
+	public String sayHello() {
+		return "Hello";
+	}
+	
 }
